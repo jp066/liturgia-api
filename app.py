@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 import requests
 from datetime import datetime, date
 import locale
+from flask_cors import CORS
 
 try:
     locale.setlocale(locale.LC_TIME, 'pt_BR.utf8')
@@ -16,6 +17,7 @@ except locale.Error:
 
 
 app = Flask(__name__)
+CORS(app)
 
 def get_liturgia_from_external_api(target_date: date):
     base_url = "https://liturgia.up.railway.app/v2/"
