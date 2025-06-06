@@ -22,7 +22,7 @@ Este projeto implementa uma API RESTful em Python usando o framework Flask para 
 Esta API serve como um proxy ou adaptador para a liturgia diária, buscando os dados de uma fonte externa (`https://liturgia.up.railway.app/v2/`) e reformatando-os para uma estrutura de resposta mais simples e consistente. Isso abstrai a complexidade e as possíveis mudanças na API externa, oferecendo um endpoint local estável para suas aplicações.
 
 **A API está atualmente deployada e acessível em:**
-👉 **`https://liturgia-api.onrender.com/liturgia`** 👈
+👉 **`https://liturgia-api.onrender.com/liturgia`** 👈[API deploy](https://liturgia-api.onrender.com/liturgia)
 
 ## Funcionalidades
 
