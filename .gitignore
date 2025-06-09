@@ -1,8 +1,5 @@
+requirements.txt
 chromedriver.exe
 venv/
 .env/
 .env
-
-
-
-requirements.txt
