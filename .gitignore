@@ -1,0 +1,6 @@
+chromedriver.exe
+venv/
+.env/
+.env
+
+Procfile
