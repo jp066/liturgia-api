@@ -116,7 +116,8 @@ def get_liturgia_from_external_api(target_date: date):
         return None
     except Exception:
         return None
-
+    
+@app.route('/')
 @app.route('/liturgia', methods=['GET'])
 @app.route('/liturgia/<string:data_str>', methods=['GET'])
 def api_get_liturgia(data_str=None):
