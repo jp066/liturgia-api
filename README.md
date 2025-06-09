@@ -88,8 +88,9 @@ Com o ambiente virtual ativado e todas as dependências instaladas, você pode i
 ```bash
 python app.py
 O servidor será iniciado e estará acessível em http://127.0.0.1:5000 (ou http://localhost:5000). Você verá mensagens de log no seu terminal.
+```
 
-Endpoints da API
+###Endpoints da API
 A API oferece os seguintes endpoints:
 
 1. Obter Liturgia do Dia Atual
@@ -113,6 +114,8 @@ Exemplo de Uso (em produção):
 Estrutura da Resposta
 Em caso de sucesso (código 200 OK), a API retornará um objeto JSON com a seguinte estrutura:
 
+
+```
 JSON
 
 {
@@ -154,13 +157,7 @@ JSON
   "reflexao": "Reflexão não disponível",
   "titulo": "6ª feira da 7ª Semana da Páscoa"
 }
-Em caso de erro (código 400 Bad Request para formato de data inválido ou 500 Internal Server Error se a API externa não responder ou houver outro problema), a resposta será:
-
-JSON
-
-{
-  "erro": "Mensagem de erro descritiva"
-}
+```
 
 Contribuição
 Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou encontrar algum bug, sinta-se à vontade para abrir uma issue ou enviar um pull request.
